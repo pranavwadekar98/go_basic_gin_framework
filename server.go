@@ -32,7 +32,7 @@ func main() {
 	apiRoutes := server.Group("/api")
 	{
 		apiRoutes.GET("/videos", func(ctx *gin.Context) {
-			ctx.JSON(200, videoController.FindAll())
+			ctx.JSON(http.StatusOK, videoController.FindAll())
 		})
 		apiRoutes.POST("/videos", func(ctx *gin.Context) {
 			err := videoController.Save(ctx)
@@ -48,5 +48,5 @@ func main() {
 	{
 		viewRoutes.GET("/videos", videoController.ShowAll)
 	}
-	server.Run(":8081")
+	server.Run(":5000")
 }
