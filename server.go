@@ -1,13 +1,14 @@
 package main
 
 import (
-	"os"
 	"io"
 	"net/http"
-	"example.com/service"
-	"example.com/controller"
-	"example.com/middlewares"
+	"os"
+
 	"github.com/gin-gonic/gin"
+	"github.com/pranavwadekar98/go_basic_gin_framework/controller"
+	"github.com/pranavwadekar98/go_basic_gin_framework/middlewares"
+	"github.com/pranavwadekar98/go_basic_gin_framework/service"
 )
 
 var (
@@ -36,12 +37,12 @@ func main() {
 		apiRoutes.POST("/videos", func(ctx *gin.Context) {
 			err := videoController.Save(ctx)
 			if err != nil {
-					ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
+				ctx.JSON(http.StatusBadRequest, gin.H{"error": err.Error()})
 			} else {
 				ctx.JSON(http.StatusCreated, gin.H{"message": "Video is created"})
 			}
 		})
-	} 
+	}
 
 	viewRoutes := server.Group("/views")
 	{

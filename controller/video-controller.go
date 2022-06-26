@@ -3,9 +3,10 @@ package controller
 import (
 	"fmt"
 	"net/http"
-	"example.com/entity"
-	"example.com/service"
+
 	"github.com/gin-gonic/gin"
+	"github.com/pranavwadekar98/go_basic_gin_framework/entity"
+	"github.com/pranavwadekar98/go_basic_gin_framework/service"
 )
 
 type VideoController interface {
@@ -15,22 +16,22 @@ type VideoController interface {
 }
 
 type controller struct {
-  service service.VideoService
+	service service.VideoService
 }
 
 func New(service service.VideoService) VideoController {
-  return controller {service: service,}
+	return controller{service: service}
 }
 
 func (c controller) FindAll() []entity.Video {
-  return c.service.FindAll()
+	return c.service.FindAll()
 }
 
 func (c controller) Save(ctx *gin.Context) error {
-  var video entity.Video
-  err := ctx.ShouldBindJSON(&video)
+	var video entity.Video
+	err := ctx.ShouldBindJSON(&video)
 	if err != nil {
-  	return err
+		return err
 	}
 	c.service.Save(video)
 	return nil
@@ -39,7 +40,7 @@ func (c controller) Save(ctx *gin.Context) error {
 func (c controller) ShowAll(ctx *gin.Context) {
 	var videos = c.service.FindAll()
 	data := gin.H{
-		"title": "My Videos",
+		"title":  "My Videos",
 		"videos": videos,
 	}
 	fmt.Println(data)
