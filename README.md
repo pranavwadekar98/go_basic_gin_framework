@@ -3,7 +3,7 @@ Developed a basic Video API with Golang Gin framework
 
 Go Module Init
 
-go mod init gitlab.com/pragmaticreviews/golang-gin-poc
+go mod init exmample.com/go_basic_gin_framework
 
 
 
