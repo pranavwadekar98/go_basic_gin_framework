@@ -6,7 +6,7 @@ Gin-Gonic library: github.com/gin-gonic/gin
 
 # Go Module Init
 
-go mod init example.com/go_basic_gin_framework
+go mod init github.com/pranavwadekar98/go_basic_gin_framework
 
 
 # Run
