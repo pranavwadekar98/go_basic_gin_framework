@@ -4,12 +4,12 @@
 
 Gin-Gonic library: github.com/gin-gonic/gin
 
-#Go Module Init
+# Go Module Init
 
 go mod init example.com/go_basic_gin_framework
 
 
-#Run
+# Run
 
 go run server.go
 
