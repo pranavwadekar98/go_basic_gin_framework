@@ -19,4 +19,14 @@ Steps for creating a videos:
 
 1. hit /api/videos POST call.
 2. basic auth: {"username": "pranav", "password": "randompass"}
-3. see results on /views/videos
+4. body: {
+    "title": "Erics Speed Run",
+    "description": "Speed run on chess.com",
+    "url": "https://www.youtube.com/embed/e6PmV-MYdP8",
+    "author": {
+        "name": "pranav",
+        "email": "pranav90111@gmail.com"
+    }
+}
+
+5. see results on /views/videos
