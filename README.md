@@ -1,15 +1,15 @@
-go_basic_gin_framework
-Developed a basic Video API with Golang Gin framework
+# go_basic_gin_framework
 
-Go Module Init
-
-go mod init gitlab.com/pragmaticreviews/golang-gin-poc
-
-
+# Developed a basic Video API with Golang Gin framework
 
 Gin-Gonic library: github.com/gin-gonic/gin
 
-Run
+#Go Module Init
+
+go mod init example.com/go_basic_gin_framework
+
+
+#Run
 
 go run server.go
 

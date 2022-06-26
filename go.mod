@@ -1,4 +1,4 @@
-module example.com/otp_based_authentication_2FA
+module example.com/go_basic_gin_framework
 
 go 1.18
 
