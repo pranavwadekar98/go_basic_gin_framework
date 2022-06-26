@@ -1,6 +1,6 @@
 # go_basic_gin_framework
 
-# Developed a basic Video API with Golang Gin framework
+# Developed a basic Video API with Golang gin framework
 
 Gin-Gonic library: github.com/gin-gonic/gin
 
