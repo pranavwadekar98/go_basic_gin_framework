@@ -30,3 +30,8 @@ Steps for creating a videos:
 }
 
 5. see results on /views/videos
+
+
+Deployed on heroku
+
+https://go-basic-gin-framework.herokuapp.com/views/videos
