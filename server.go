@@ -5,10 +5,10 @@ import (
 	"net/http"
 	"os"
 
+	"example.com/controller"
+	"example.com/middlewares"
+	"example.com/service"
 	"github.com/gin-gonic/gin"
-	"github.com/pranavwadekar98/go_basic_gin_framework/controller"
-	"github.com/pranavwadekar98/go_basic_gin_framework/middlewares"
-	"github.com/pranavwadekar98/go_basic_gin_framework/service"
 )
 
 var (

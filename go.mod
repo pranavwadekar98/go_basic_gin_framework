@@ -1,10 +1,24 @@
-module github.com/pranavwadekar98/go_basic_gin_framework
+module example.com/go_basic_gin_framework
 
 go 1.18
 
-require github.com/gin-gonic/gin v1.8.1
+replace example.com/controller => ./controller
+
+replace example.com/entity => ./entity
+
+replace example.com/middlewares => ./middlewares
+
+replace example.com/service => ./service
 
 require (
+	example.com/controller v0.0.0-00010101000000-000000000000
+	example.com/middlewares v0.0.0-00010101000000-000000000000
+	example.com/service v0.0.0-00010101000000-000000000000
+	github.com/gin-gonic/gin v1.8.1
+)
+
+require (
+	example.com/entity v0.0.0-00010101000000-000000000000 // indirect
 	github.com/gin-contrib/sse v0.1.0 // indirect
 	github.com/go-playground/locales v0.14.0 // indirect
 	github.com/go-playground/universal-translator v0.18.0 // indirect

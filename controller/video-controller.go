@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"net/http"
 
+	"example.com/entity"
+	"example.com/service"
 	"github.com/gin-gonic/gin"
-	"github.com/pranavwadekar98/go_basic_gin_framework/entity"
-	"github.com/pranavwadekar98/go_basic_gin_framework/service"
 )
 
 type VideoController interface {
